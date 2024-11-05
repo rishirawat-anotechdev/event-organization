@@ -11,14 +11,14 @@ const cardData = [
   { 
     id: 1, 
     title: 'MULTIPLE EVENTS', 
-    description: 'Managing diverse events with precision and ease, from meetings to conferences.',
+    description: 'Managing diverse events with precision and ease, from meetings.',
     icon: <Calendar size={60} />,
     fontFamily: 'Roboto'  // Use Roboto font for this card
   },
   { 
     id: 2, 
     title: 'EVENT MANAGEMENT', 
-    description: 'Handling all logistics and vendors to deliver flawless events, every time.',
+    description: 'Handling all logistics and vendors to deliver flawless events.',
     icon: <LayoutList size={60} />,
     fontFamily: 'Poppins'  // Use Poppins font for this card
   },
