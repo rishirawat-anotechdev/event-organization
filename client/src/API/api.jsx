@@ -1,7 +1,7 @@
 import axios from "axios";
 
  const API = axios.create({
-  baseURL: `https://manaliclub.online/api/v1`,  
+  baseURL: `https://event-organization-server.onrender.com/api/v1`,  
   withCredentials: true,
 });
 
