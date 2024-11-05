@@ -36,7 +36,7 @@ if (cluster.isPrimary) {
 
   // Enable CORS for requests from localhost:3000
   app.use(cors({
-    origin: "https://multivendor-application-frontend.onrender.com/",
+    origin: "https://event-organization-tm99.onrender.com/",
     credentials: true, // Allow sending cookies from frontend
   }));
 
