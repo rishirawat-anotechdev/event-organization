@@ -20,11 +20,13 @@ export const registerAdmin = async (req, res) => {
       expiresIn: "1h",
     });
 
-    res.cookie("token", token, {
-      httpOnly: true,
-      secure: process.env.NODE_ENV === "production",
-      sameSite: "strict",
-    });
+   res.cookie("token", token, {
+    httpOnly: true,
+    secure: process.env.NODE_ENV === "production", 
+    sameSite: "none",  
+    maxAge: 24 * 60 * 60 * 1000  
+});
+
 
     res.status(201).json({
          newAdmin,
@@ -51,14 +53,15 @@ export const loginAdmin = async (req, res) => {
     }
 
     const token = jwt.sign({ id: admin._id }, process.env.JWT_SECRET, {
-      expiresIn: "1h",
+      expiresIn: "7d",
     });
 
-    res.cookie("token", token, {
-      httpOnly: true,
-      secure: process.env.NODE_ENV === "production",
-      sameSite: "strict",
-    });
+  res.cookie("token", token, {
+    httpOnly: true,
+    secure: process.env.NODE_ENV === "production", 
+    sameSite: "none",  
+    maxAge: 24 * 60 * 60 * 1000  
+});
     const adminData = admin.toObject();
     delete adminData.password;
 

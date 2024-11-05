@@ -36,8 +36,8 @@ if (cluster.isPrimary) {
 
   // Enable CORS for requests from localhost:3000
   app.use(cors({
-    origin: ["https://event-organization-tm99.onrender.com", "http://localhost:3000"],
-    credentials: true, 
+    origin: ["https://event-organization-tm99.onrender.com", "http://localhost:3000"], 
+    credentials: true,
   }));
 
   // Middleware for cookies and parsing
