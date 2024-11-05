@@ -188,14 +188,7 @@ const FounderModal = () => {
       />
 
       <Box sx={{ display: 'flex', gap: 2, marginTop: 2 }}>
-        {loading ? (
-          <CircularProgress
-            sx={{
-              color: loaderColors[action]
-            }}
-          />
-        ) : (
-          <>
+    
             <Button
               variant='contained'
               onClick={handleAdd}
@@ -232,8 +225,7 @@ const FounderModal = () => {
             >
               Delete
             </Button>
-          </>
-        )}
+      
       </Box>
 
       {/* Loader overlay with blur effect */}

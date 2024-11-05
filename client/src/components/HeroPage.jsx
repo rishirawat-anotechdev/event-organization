@@ -105,8 +105,10 @@ const HeroPage = () => {
                   gutterBottom
                   sx={{ fontSize: '5rem', fontFamily: 'Playfair Display, serif' }}
                 >
-                  {heroPages[slideIndex].title}{' '}
-                  <span style={{ color: '#E91E63' }}>events</span>
+                   {heroPages[slideIndex].title.split(' ').slice(0, -1).join(' ')}{' '}
+  <span style={{ color: '#E91E63' }}>
+    {heroPages[slideIndex].title.split(' ').slice(-1)}
+  </span>
                 </Typography>
                 <Typography variant='h6' paragraph sx={{ fontSize: '1.5rem', fontFamily: 'Vidaloka, serif' }}>
                   {heroPages[slideIndex].description}
@@ -188,7 +190,7 @@ const HeroPage = () => {
               whiteSpace: 'nowrap',
               position: 'absolute',
               bottom: 10,
-              left: '20%',
+              left: {xs:"35%", sm:"20%",  md:"20%"},
               transform: 'translateX(-50%)',
               color: '#fff',
               bgcolor: isDarkMode ? '#212121' : '#300843',

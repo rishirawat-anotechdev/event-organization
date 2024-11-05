@@ -53,7 +53,7 @@ const WhyChooseUs = () => {
       textAlign: 'center', 
       backgroundColor: isDarkMode ? 'grey.900' : '#300843' 
     }}>
-      <Typography variant="h4" gutterBottom sx={{ marginBottom: 2, color: '#fff', fontSize:"50px", mt:{sm:15, md:5} }}>
+      <Typography variant="h4" gutterBottom sx={{ marginBottom: 2, color: '#fff', fontSize:"50px", mt:{sm:20,xs:20, md:5} }}>
         WHY CHOOSE <span style={{ color: '#E91E63', fontSize:"60px" }}>US</span>?
       </Typography>
       <Box

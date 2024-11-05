@@ -44,7 +44,7 @@ const AboutUsModal = () => {
       setOriginalConcepts(response.data.originalConcepts)
       setRegularCustomers(response.data.regularCustomers)
       setYearsOfExperience(response.data.yearsOfExperience)
-      setShowMore(false) // Reset showMore on fetch
+      setShowMore(false) 
     } catch (error) {
       console.error('Error fetching About Us section:', error)
     }
