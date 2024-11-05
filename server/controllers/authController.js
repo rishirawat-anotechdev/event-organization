@@ -56,11 +56,12 @@ export const loginAdmin = async (req, res) => {
       expiresIn: "1h",
     });
 
-    res.cookie("token", token, {
-      httpOnly: true,
-      secure: process.env.NODE_ENV === "production",
-      sameSite: "strict",
-    });
+  res.cookie("token", token, {
+    httpOnly: true,
+    secure: process.env.NODE_ENV === "production", 
+    sameSite: "none",  
+    maxAge: 24 * 60 * 60 * 1000  
+});
     const adminData = admin.toObject();
     delete adminData.password;
 
