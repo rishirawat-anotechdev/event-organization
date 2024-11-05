@@ -190,7 +190,7 @@ const HeroPage = () => {
               whiteSpace: 'nowrap',
               position: 'absolute',
               bottom: 10,
-              left: {xs:"35%", sm:"20%",  md:"20%"},
+              left: {xs:"35%", sm:"20%",  md:"25%"},
               transform: 'translateX(-50%)',
               color: '#fff',
               bgcolor: isDarkMode ? '#212121' : '#300843',
